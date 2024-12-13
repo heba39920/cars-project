@@ -1,0 +1,77 @@
+.text-animation {
+    margin-left    : 5rem;
+    display        : flex;
+    align-items    : start;
+    justify-content: center;
+    flex-direction : column;
+    animation        : text-animation 2s forwards;
+    -webkit-animation: text-animation 2s forwards;
+}
+
+.text-animation-heading {
+    font-size  : 3rem;
+    font-weight: 700;
+}
+
+.text-animation-span {
+    color   : var(--blue);
+    position: relative;
+}
+
+.text-animation-span::after {
+    content   : "";
+    position  : absolute;
+    width     : 131.34px;
+    height    : 10px;
+    right     : 0;
+    left      : 0;
+    bottom    : 0;
+    background: var(--blue);
+    transform : rotate(6.74deg);
+    clip-path : ellipse(79% 50% at 77% 100%);
+
+}
+
+.img-animation {
+    animation        : car-animation 2s forwards;
+    -webkit-animation: car-animation 2s forwards;
+    max-width        : 75%;
+
+}
+.hero-img{
+    width: 10rem;
+    height: 3rem;
+}
+
+@keyframes car-animation {
+    0% {
+        display  : none;
+        max-width: 25%;
+    }
+
+    100% {
+        display  : inline;
+        max-width: 75%;
+    }
+
+}
+
+
+
+
+
+
+@keyframes text-animation {
+    0% {
+        margin-top:-7rem;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+@media (max-width:768px) {
+    .text-animation{
+        margin-left: 0;
+    }
+}

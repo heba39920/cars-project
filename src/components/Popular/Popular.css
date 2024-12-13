@@ -1,0 +1,14 @@
+.search-input{
+    position: relative;
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.deals-btn{
+    background-color: #1572d31a;
+    color: #0b5ed7;
+    border: 1px solid #1572d31a;
+    padding: 5px 20px;
+}

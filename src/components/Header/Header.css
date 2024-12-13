@@ -1,0 +1,21 @@
+.logo{
+    padding: 2rem ;
+    width: 105% ;
+
+}
+.nav-link {
+    color: rgb(72, 70, 70) !important ;
+
+}
+.nav-link .active {
+    color: #000 !important;
+}
+.header{
+    background-image: url("../../assets/assignment-images/imges/landing-page/Frame.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 35% 90%;
+    background-origin: border-box;
+  
+
+}

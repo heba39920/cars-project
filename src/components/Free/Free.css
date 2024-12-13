@@ -1,0 +1,22 @@
+.input{
+    width: 360px;
+    border-radius: 80px ;
+    background: #cedcff ;
+    padding: .7rem 1.5rem ;
+    
+    -webkit-border-radius: 80px ;
+    -moz-border-radius: 80px ;
+    -ms-border-radius: 80px ;
+    -o-border-radius: 80px ;
+}
+.FreeBg{
+    background-image: url(../../assets/assignment-images/imges/landing-page/sec-5/Vector.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: border-box;
+    background-size: 400px 500px;
+    height: auto;
+}
+.iphone{
+    width: 70%;
+}
