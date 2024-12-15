@@ -15,7 +15,7 @@ export default function Popular() {
      <button className="input-group-text btn btn-primary">Search</button>
    </div>
       <Section head="POPULAR RENTAL DEALS" title="Most popular cars rental deals">
-    <div className="row">
+    <div className="d-flex flex-wrap justify-content-center align-items-center">
 
     <Card title="Montero" model="2021" price="$2814.46" img={car1}/>
     <Card title="Passat" model="2021" price="$1731.98" img={car2}/>

@@ -1,11 +1,11 @@
 
 
-
+import { NavLink } from "react-router-dom"
 
 export default function Card({title, model, price,img}) {
   return (
-<div className="col-md-3">
-<div className="card" style={{ width: "18rem" }}>  
+<div className=" col-lg-3 col-md-6 col-sm-12">
+<div className="card mb-4" style={{ width: "18rem" }}>  
 <img src={img} className="card-img-top" alt={title} />  
 <div className="card-body">  
   <h5 className="card-title">{title}</h5>  
@@ -40,9 +40,10 @@ export default function Card({title, model, price,img}) {
       <span className="text-muted"> / day</span>  
     </span>  
   </div>  
-  <a href="#" className="btn btn-primary mt-3 w-100" role="button">View details <i className="fas fa-long-arrow-alt-right px-2"></i></a>  
+<NavLink to="carsDetails">  <button className="btn btn-primary mt-3 w-100" role="button">View details <i className="fas fa-long-arrow-alt-right px-2"></i></button>  
+</NavLink>
 </div>  
-</div>
-</div>
+</div>  
+</div> 
   )
 }

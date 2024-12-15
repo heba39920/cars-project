@@ -11,13 +11,13 @@ import CarDetails from './components/CarDetails/CarDetails'
 function App() {
 
 
- let routes = createBrowserRouter([{path:"/", element: <MasterLayout/> ,
-  children:[{index:true, element: <Home />},
-    {path:"home", element: <Home/>,children:[{path:"cars", element: <Cars/>,children:[{path:"carsDetails", element: <CarDetails/>}]}]}
-   
-  ]}
- 
- ])
+ let routes = createBrowserRouter([{path:"/", element: <MasterLayout />,
+  children:[ {index: true , element: <Home/>},
+  {path:"home", element: <Home/>},
+ {path:"cars", element: <Cars/> } ,
+  {path:"carsDetails", element: <CarDetails/>}
+]
+ }])
 
  return <RouterProvider router={routes}/>
 }
