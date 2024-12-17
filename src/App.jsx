@@ -6,12 +6,14 @@ import Home from './components/Home/Home'
 import MasterLayout from './components/MasterLayout/MasterLayout'
 import Cars from './components/Cars/Cars'
 import CarDetails from './components/CarDetails/CarDetails'
+import NotFound from './components/NotFound/NotFound'
 
 
 function App() {
 
 
  let routes = createBrowserRouter([{path:"/", element: <MasterLayout />,
+    errorElement:<NotFound/>,
   children:[ {index: true , element: <Home/>},
   {path:"home", element: <Home/>},
  {path:"cars", element: <Cars/> } ,
